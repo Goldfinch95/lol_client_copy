@@ -14,12 +14,18 @@
             <img src="./images/002_RG_2021_FULL_LOCKUP_RED.png" alt="">
         </div>
         <div class="title__box">
-            <h2>Ingresar</h2>
+            <img src="./images/ingresar.png" alt="">
         </div>
-        <div class="input__box">
-            <input class="inputs" type="text" placeholder="NOMBRE DE USUARIO">
-            <input class="inputs" type="text" placeholder="CONTRASEÑA">
-        </div>
+        <form>
+            <div class="input__container">
+                <input id="input__text-user" class="input__text"  type="text" required>
+                <span class="label__floating">NOMBRE DE USUARIO</span>
+            </div>
+            <div class="input__container">
+                <input id="input__text-password" class="input__text" type="password" required>
+                <span class="label__floating">CONTRASEÑA</span>
+            </div>
+        </form>
         <div class="container">
             <div class="plataform__box">
                 <button class="facebook__box">
@@ -42,17 +48,18 @@
         </div>
         <div class="container_enter__box">
             <div class="enter__box">
-                <img src="./images/Sin título.png" alt="">
+                <button id="button__send"><img src="./images/flecha.png" alt=""></button>
             </div>
         </div>
         <footer class="footer__box">
             <p class="session__footer">¿NO PUEDES INICIAR SESIÓN?</p>
             <p class="session__footer">CREAR UNA CUENTA</p>
-            <p class="version__footer">V67.0.0</p>
+            <p class="version__footer">V 67.0.0</p>
             <p class="services__footer">ESTA APLICACIÓN ESTÁ PROTEGIDA POR HCAPTCHA Y SUS <u>AVISO DE PRIVACIDAD</u> Y <u>TERMINOS DE SERVICIO</u> SON APLICABLES.</p>
         </footer>
     </div>
     <div class="img__box">
     </div>
+    <script src="login.js"></script>
 </body>
 </html>
